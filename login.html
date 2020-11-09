@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Site made with Mobirise Website Builder v3.12.1, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v3.12.1, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/images/empire-logo-reverse-black-copy.gif" type="image/x-icon">
+  <meta name="description" content="Login Page">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/mobirise/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+
+<script type = "text/javascript">
+var count = 2;
+function validate() {
+var un = document.myform.username.value;
+var pw = document.myform.pword.value;
+var valid = false;
+var unArray = ["user1@empire.in", "user2@empire.in", "user3@empire.in", "user4@empire.in","user5@empire.in","user6@empire.in","user7@empire.in","user8@empire.in","user9@empire.in","user10@empire.in"]; 
+
+var pwArray = ["user1@12345", "user2@12345","user3@12345","user4@12345","user5@12345","user6@12345","user7@12345","user8@12345","user9@12345","user10@12345"];  
+for (var i=0; i <unArray.length; i++) {
+if ((un == unArray[i]) && (pw == pwArray[i])) {
+valid = true;
+break;
+}
+}
+if (valid) {
+alert ("Login was sucessfully processed.  You will be redirected to the members page now.");
+window.location = "form1.html";
+return false;
+}
+var t = " tries";
+if (count == 1) {t = " try"}
+if (count >= 1) {
+alert ("Invalid username and/or password.  You have " + count + t + " left.");
+document.myform.username.value = "";
+document.myform.pword.value = "";
+setTimeout("document.myform.username.focus()", 25);
+setTimeout("document.myform.username.select()", 25);
+count --;
+}
+else {
+alert ("Still incorrect! You have no more tries left!");
+document.myform.username.value = "No more tries allowed!";
+document.myform.pword.value = "";
+document.myform.username.disabled = true;
+document.myform.pword.disabled = true;
+return false;
+}
+}
+</script>
+
+
+
+  
+  
+</head>
+<body>
+<section class="mbr-navbar mbr-navbar--freeze mbr-navbar--absolute mbr-navbar--sticky mbr-navbar--auto-collapse" id="ext_menu-2z">
+    <div class="mbr-navbar__section mbr-section">
+        <div class="mbr-section__container container">
+            <div class="mbr-navbar__container">
+                <div class="mbr-navbar__column mbr-navbar__column--s mbr-navbar__brand">
+                    <span class="mbr-navbar__brand-link mbr-brand mbr-brand--inline">
+                        <span class="mbr-brand__logo"><a href="#top"><img src="assets/images/empire-logo-reverse-black-copy.gif" class="mbr-navbar__brand-img mbr-brand__img" alt="Empire"></a></span>
+                        
+                    </span>
+                </div>
+                <div class="mbr-navbar__hamburger mbr-hamburger"><span class="mbr-hamburger__line"></span></div>
+                <div class="mbr-navbar__column mbr-navbar__menu">
+                    <nav class="mbr-navbar__menu-box mbr-navbar__menu-box--inline-right">
+                        <div class="mbr-navbar__column">
+                            <ul class="mbr-navbar__items mbr-navbar__items--right float-left mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active"><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="index.html">HOME</a></li><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="index.html#content5-1r">ABOUT</a></li> <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="index.html#form1-u">FEEDBACK</a></li><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="index.html#contacts1-1z">CONTACT US</a></li></ul>                            
+                                                    </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="engine"><a rel="external" href="www.empireairways.in">Empire</a></section><section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-after-navbar" id="form1-32" style="background-color: rgb(239, 239, 239);">
+    
+    <div class="mbr-section__container mbr-section__container--std-padding container" style="padding-top: 93px; padding-bottom: 93px;">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2" data-form-type="formoid">
+                        <div class="mbr-header mbr-header--center mbr-header--std-padding">
+                            <h2 class="mbr-header__text">LOGIN</h2>
+                        </div>
+                        <div data-form-alert="true">
+                            <div class="hide" data-form-alert-success="true">User Id or password wrong</div>
+                        </div>
+                        <form action="https://mobirise.com/" data-form-title="LOGIN DETAILS" name="myform">
+                            <input type="hidden" value="eXkUHl90vLhmqwzJKuEZs7uyQqZ6yHb+ttK4e3P9ckS+d8uM6agvPQo2k8ZoZrB6fpGsOSleT4DCLqoLJ0n0ArkZJGQbdehx4GLDYXMxYJR5mvvXkJ3YsNgZBka7RBY3" data-form-email="true">
+                            <div class="form-group">
+                              
+
+
+
+
+
+  <input type="email" id="email" class="form-control" required="*" placeholder="Email or Username" data-form-field= "Email or Username" name="username">
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="password" id="password" class="form-control" name="pword"   required="" placeholder="Password" data-form-field= "Password">                           </div>
+                          <div class="mbr-buttons mbr-buttons--right">
+
+<a class="mbr-buttons__btn btn btn-default" onclick="validate()">LOGIN</a>
+
+
+<!--
+<input type="submit" class="mbr-buttons__btn btn btn-default" onclick="validate()" value="Login">
+-->
+
+</div>
+                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-background" id="contacts1-30" style="background-image: url(assets/images/plane-1-2000x697.jpg);">
+    
+    <div class="mbr-section__container container">
+        <div class="mbr-contacts mbr-contacts--wysiwyg row" style="padding-top: 60px; padding-bottom: 60px;">
+            <div class="col-sm-4">
+                <div><img src="assets/images/empire-logo-reverse-black-copy.gif" class="mbr-contacts__img mbr-contacts__img--left"></div>
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <p class="mbr-contacts__text"><strong>ADDRESS</strong><br>Raj Niketan, Rajdwara, Rampur</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="mbr-contacts__text"><strong>CONTACTS</strong><br>
+Email: yashraj0312@gmail.com<br>Mobile: +91 7037534848</p>
+                    </div>
+                    <div class="col-sm-4"><ul class="mbr-contacts__list"></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-background" id="footer1-31" style="background-image: url(assets/images/plane2-2000x58.jpg);">
+    <div class="mbr-overlay" style="opacity: 0; background-color: rgb(255, 255, 255);"></div>
+    <div class="mbr-section__container container">
+        <div class="mbr-footer mbr-footer--wysiwyg row" style="padding-top: 0px; padding-bottom: 0px;">
+            <div class="col-sm-12">
+                <p class="mbr-footer__copyright">Copyright (c) 2018 EMPIRE AIRWAYS. </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smooth-scroll/smooth-scroll.js"></script>
+  <!--[if lte IE 9]>
+    <script src="assets/jquery-placeholder/jquery.placeholder.min.js"></script>
+  <![endif]-->
+  <script src="assets/mobirise/js/script.js"></script>
+  <script src="assets/formoid/formoid.min.js"></script>
+  
+  
+</body>
+</html>
